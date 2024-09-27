@@ -155,6 +155,11 @@ if(userName===''||password===''){
      loginPage.style.display='none';
      logOut.style.display='block';
      mainPage.style.display='block';
+     container.style.width='60rem'
+    container.style.overflowY='scroll'
+let welcome=document.createElement('h3');
+welcome.textContent = `Welcome, ${activeUser.username}!`;
+mainPage.insertBefore(welcome, postContainer);
         
 return true
 
